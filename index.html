@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>vil0086 - projekt B</title>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header-logos">
+
+      <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342" class="h-full"><path fill="#11457e" d="M0 0h513v342H0z"></path><path fill="#d7141a" d="M513 171v171H0l215-171z"></path><path fill="#FFF" d="M513 0v171H215.185L0 0z"></path></svg>
+
+       <a href="index.html"><img id="header-left-logo" src="images/logo-oktagon-menu.png"></a>
+      <a id="timer"> xx:xx:xx</a>
+      <script>
+        setInterval(timering, 1000);
+
+        function timering() {
+
+          var currentDate = new Date();
+          var endDate = new Date(2023, 11, 9, 18, 0, 0, 0);
+
+          var start = currentDate.getTime();
+          var end = endDate.getTime();
+
+          var temp = end - start;
+
+          var seconds = Math.floor(temp / 1000);
+          var minutes = Math.floor(temp / (1000 * 60));
+          var hours = Math.floor(temp / (1000 * 60 * 60));
+          var days = Math.floor(temp / (1000 * 60 * 60 * 24));
+
+          var days_offset = days % 1;
+
+          days -= days_offset;
+
+          var elem = document.getElementById("timer");
+
+          var text = "";
+          text += days + "d " + (hours % 24) + "h " + (minutes % 60) + "m " + (seconds % 60) + "s ";
+          elem.innerText = text;
+
+
+        }
+
+      </script>
+
+      <style>
+        li.dropdown {
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+     
+
+        .dropdown:hover .dropdown-content {
+          
+          width: 350px;
+          height: 200px;
+          margin-top: 27px;
+          display: block;
+        }
+      </style>
+
+
+
+       <img src="images/ireland-logo.png">
+       <img src="images/gamechanger-logo.png">
+       <img src="images/logo-okt-tv-black-with-paddings.png">
+
+    </div>
+    <div class="a-header-div">
+      <ul>
+        <li class="dropdown"><a href="events.html" class="dropbtn">VSTUPENKY</a>
+          <svg height="50" width="50">
+            <path d="M 0 0 L 2 2 L 6 6 M 6 6 L 12 0 L 10 0 L 6 4 L 2 0 L 0 0" />
+          </svg>
+          <div class="dropdown-content">
+
+            <div class="dropdown-content">
+              <a href="#service1">POPRVÉ NA TURNAJ</a>
+              <a href="#service2">OKTAGON 50 | OSTRAVA</a>
+              <a href="#service3">OKTAGON 51 | PRAHA</a>
+            </div>
+
+        </li>
+
+        <li class="dropdown"><a href="events.html" class="dropbtn">TURNAJE</a>
+          <svg height="50" width="50">
+            <path d="M 0 0 L 2 2 L 6 6 M 6 6 L 12 0 L 10 0 L 6 4 L 2 0 L 0 0" />
+          </svg>
+          <div class="dropdown-content">
+
+            <div class="dropdown-content">
+              <a href="#service1">Služba 1</a>
+              <a href="#service2">Služba 2</a>
+              <a href="#service3">Služba 3</a>
+            </div>
+
+        </li>
+
+
+        <li class="dropdown"><a href="fighters.html" class="dropbtn">BOJOVNÍCI</a>
+          <svg height="50" width="50">
+            <path d="M 0 0 L 2 2 L 6 6 M 6 6 L 12 0 L 10 0 L 6 4 L 2 0 L 0 0" />
+          </svg>
+          <div class="dropdown-content">
+
+            <div class="dropdown-content">
+              <a href="#service1">Služba 1</a>
+              <a href="#service2">Služba 2</a>
+              <a href="#service3">Služba 3</a>
+            </div>
+          
+        </li>
+
+        <li> <a href="https://store.oktagonmma.com/">MERCH</a>
+     
+        </li>
+
+
+        <li class="dropdown"><a href="https://oktagonmma.cz/organizace-oktagon-mma/" class="dropbtn">ORGANIZACE</a>
+          <svg height="50" width="50">
+            <path d="M 0 0 L 2 2 L 6 6 M 6 6 L 12 0 L 10 0 L 6 4 L 2 0 L 0 0" />
+          </svg>
+          <div class="dropdown-content">
+
+            <div class="dropdown-content">
+              <a href="#service1">Služba 1</a>
+              <a href="#service2">Služba 2</a>
+              <a href="#service3">Služba 3</a>
+            </div>
+    
+        </li>
+
+        <li class="dropdown"><a href="https://oktagonmma.com/cs/my-first-tournament/" class="dropbtn">PRO FANOUŠKY</a>
+          <svg height="50" width="50">
+            <path d="M 0 0 L 2 2 L 6 6 M 6 6 L 12 0 L 10 0 L 6 4 L 2 0 L 0 0" />
+          </svg>
+          <div class="dropdown-content">
+
+            <div class="dropdown-content">
+              <a href="#service1">POPRVÉ NA TURNAJ</a>
+              <a href="#service2">OKTAGON 50 | OSTRAVA</a>
+              <a href="#service3">OKTAGON 51 | PRAHA</a>
+            </div>
+          
+        </li>
+
+      </ul>
+    </div>
+  </header>
+  <div class="content">
+    <div class="first-background">
+
+      <div class="slideshow-container">
+        <div class="Containers">
+          <img src="images/oktagon-49.webp">
+          <div class="carousel-description">
+            <div class="carousel-description-text">
+              <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+              <h1>OKTAGON 49: MOEIL VS. TODEV</h1>
+              <h2>18.11.2023, 18:00 - LANXESS ARENA, KOLÍN</h2>
+              <h4>Turnaj, který rozechvěje zem. A událost, na kterou se tak dlouho čekalo. Již 18. 11. po více jak 2
+                letech dojde ke korunovaci nového šampiona těžké váhy.</h4>
+            </div>
+            <div class="carousel-description-buttons">
+              <button class="carousel-description-button-1"><a>KOUPIT VSTUPENKU</a></button>
+              <button class="carousel-description-button-2"><a>FIGHTCARD</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="Containers">
+          <img src="images/oktagon-50.webp">
+          <div class="carousel-description">
+            <div class="carousel-description-text">
+              <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+              <h1>OKTAGON 50: Keita vs. Samsonidse</h1>
+              <h2>09.12.2023, 18:00 - OSTRAVAR ARÉNA, Ostrava</h2>
+              <h4>OKTAGON a jeho elitní fighteři se po 9 měsících představí opět v Ostravě, kde bojová krev místním
+                koluje
+                v žilách. Ti nejlepší a nejhlasitější fanoušci na světě dostanou v Ostravar Aréně 9. 12. 2023 t</h4>
+            </div>
+            <div class="carousel-description-buttons">
+              <button class="carousel-description-button-1"><a>KOUPIT VSTUPENKU</a></button>
+              <button class="carousel-description-button-2"><a>FIGHTCARD</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="Containers">
+          <img src="images/oktagon-51.webp">
+          <div class="carousel-description">
+            <div class="carousel-description-text">
+              <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+              <h1>OKTAGON 51: Kincl vs. Čepo</h1>
+              <h2>29.12.2023, 18:00 - O2 ARENA, PRAHA</h2>
+              <h4>Pražská O2 arena se 29. 12. 2023 stane místem, kde se bude psát historie. Dojde nejen na očekávanou
+                bitvu Kincl vs. Čepo, ale také k velkému finále evropské MMA ligy mistrů.</h4>
+            </div>
+            <div class="carousel-description-buttons">
+              <button class="carousel-description-button-1"><a>KOUPIT VSTUPENKU</a></button>
+              <button class="carousel-description-button-2"><a>FIGHTCARD</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="news-from-cage">
+        <ul>
+          <li>NOVINKY Z KLECE</li>
+          <li><a href="">VŠE</a></li>
+          <li><a href="">TURNAJE</a></li>
+        </ul>
+
+      </div>
+
+      <div class="news-block" id="first-block">
+        <div class="news-block-photo">
+          <img src="images/magard.jpg">
+        </div>
+        <div class="news-block-text">
+          <h4>DEJTE MI HO DO PRAHY. NEMŮŽU SE DOČKAT, AŽ MU TAM ROZBIJU HLAVU, HŘÍMÁ ŽRALOK Z DÁNSKA</h4>
+          <p>Jelikož v Manchesteru je jako doma, bylo jasné, že si Jonas Magard nenechá ujít sobotní OKTAGON v Anglii.
+            Skutečně dorazil a hrál tam jednu z důležitých rolí, dokonce v jednu chvíli vstoupil přímo do klece. Víc než
+            nahlas si tam totiž o něj řekl Jack Cartwright..</p>
+        </div>
+      </div>
+
+      <div class="news-block" id="eight-block">
+        <div class="news-block-photo-ad">
+          <img src="images/daruj-oktagon.jpg">
+        </div>
+      </div>
+
+
+      <div class="news-block" id="second-block">
+        <div class="news-block-photo">
+          <img src="images/anglie-finale.jpg">
+        </div>
+        <div class="news-block-text">
+          <h4>OKTAGON POPRVÉ V ANGLII: DVA ŠKRTNUTÉ TAHÁKY I SMUTNÉ FINÁLE. POLÍVKA USPĚL</h4>
+          <p>OKTAGON v Manchesteru korunoval prvního šampiona muší váhy. Elias Garcia sice po dvou kolech bodově
+            ztrácel,
+            ale o vítězství rozhodla krvavá rána na soupeřově obočí..</p>
+        </div>
+      </div>
+
+      <div class="news-block" id="third-block">
+        <div class="news-block-photo">
+          <img src="images/bahnik-anglie.jpg">
+        </div>
+        <div class="news-block-text">
+          <h4>ZA 25 SEKUND KONEC A BOLEST. NASKOČENÉ KOLENO TREFILO ROZKROK ČESKÉHO BOJOVNÍKA</h4>
+          <p>Přišel bez svého meče, se kterým nastupoval na Štvanici, přesto Akonne Wanliss zaujal, ale tentokrát z toho
+            neměl radost. Domácí bojovník byl favoritem sázkových kanceláří na OKTAGONU 48 v Manchesteru, ale scénář s
+            Jakubem Bahníkem byl napsán úplně jinak..</p>
+        </div>
+      </div>
+
+
+      <div class="news-block" id="fourth-block">
+        <div class="news-block-photo-ad">
+          <img src="images/v-kazdem-z-nas.png">
+        </div>
+      </div>
+
+      <div class="news-block" id="fifth-block">
+        <div class="news-block-photo">
+          <img src="images/abby-anglie.jpg">
+        </div>
+        <div class="news-block-text">
+          <h4>MŮJ ŽIVOT HOLT NEMÁ BÝT POHÁDKOU, HLESL SMUTNÝ HRDINA VEČERA ABY</h4>
+          <p>Dvě kola se rvali o pás šampiona, o držiteli pásu však rozhodla petarda zhruba v půlce toho prvního.
+            Američan
+            Elias Garcia se v sobotu v Manchesteru stal králem muší divize OKTAGONU. Do třetího roundu už totiž doktor
+            jeho soupeře z Walesu Aarona Abyho nepustil..</p>
+        </div>
+      </div>
+
+      <div class="news-block" id="sixth-block">
+        <div class="news-block-photo">
+          <img src="images/pokorny-anglie.jpg">
+        </div>
+        <div class="news-block-text">
+          <h4>SKANDÁL NA VÁŽENÍ! ZÁPASNÍCI DO SEBE VLETĚLI PŘI STAREDOWNU | NA DOHLED EP. 6 | OKTAGON 48</h4>
+          <p>Nešťastnou dohru má páteční fyzický konflikt z ranního oficiálního vážení na turnaji OKTAGON 48.</p>
+        </div>
+      </div>
+
+      <div class="news-block" id="seventh-block">
+        <div class="news-block-photo-ad">
+          <img src="images/daruj-oktagon.jpg">
+        </div>
+      </div>
+
+      <div class="news-see-more">
+        <button>Zobrazit více</button>
+      </div>
+    </div>
+
+    <div class="second-background">
+
+    </div>
+    <div class="about-projects-text">
+      <h1>POŘADY A PROJEKTY</h1>
+    </div>
+    <div class="about-projects">
+
+      <div class="about-serial-project" id="serial-project-1">
+        <img src="images/cesta-za-snom.jpg">
+        <h4>CESTA ZA SNOM</h4>
+        <p>Nahlédni zblízka do života jedné z největších bojovnic OKTAGONu Lucie Szabové – velmi skromné a usměvavé
+          rodačky z Bratislavy, která se v kleci mění na „Silent Killer“ a rozpoutává peklo. Vítězka 4. série OKTAGON
+          Výzvy v MMA ještě nikdy neprohrála, odmítla nabídku UFC a ve 24 letech se stala matkou. Jak se jí podaří
+          skloubit mateřství a návrat na vrchol s cílem stát se šampionkou OKTAGONu?</p>
+        <a
+          href="https://oktagon.tv/cs/tag/cesta-za-snom/?_gl=1*1y6wbt4*_ga*NjM2MjM0MDY2LjE2NzQxNzAyNDY.*_ga_N0P80PX2BB*MTY5OTI5MDUyNS4zMS4xLjE2OTkyOTMxMDQuMC4wLjA.">Zjistit
+          více</a>
+      </div>
+
+
+      <div class="about-serial-project" id="serial-project-2">
+        <img src="images/tgc.png">
+        <h4>TIPSPORT GAME CHANGER</h4>
+        <p>Tipsport Gamechanger je ojedinělý projekt v rámci evropského MMA, který pořádá organizace OKTAGON MMA ve
+          spolupráci se společností Tipsport. 16 nejlepších bojovníků z Evropy a České republiky bude bojovat o jeden
+          milion eur během 5 turnajů v jedné pyramidě. Pojďme se na to společně podívat!</p>
+        <a href="https://tipsportgamechanger.com/cs/">Zjistit více</a>
+      </div>
+
+
+      <div class="about-serial-project" id="serial-project-3">
+        <img src="images/manchester.jpg">
+        <h4>STAGE TO THE CAGE</h4>
+        <p>"Stage to the Cage" will see two top UK celebrities sacrifice everything and dedicate their lives to MMA for
+          ten months before fighting each other at the inaugural OKTAGON MMA event in the UK. One of the biggest reality
+          TV stars that the UK has ever seen, Jake Quickenden, will take on leading stand-up comedian, Paul Smith.</p>
+        <a href="https://oktagonmma.com/cs/projects/stage-to-the-cage/">Zjistit více</a>
+      </div>
+
+    </div>
+
+    <footer>
+
+      <div class="first-background">
+        <div class="foot-logos">
+          <ul>
+            <li><img src="images/monster.png"></li>
+            <li><img src="images/pitbull.png"></li>
+            <li><img src="images/singha.png"></li>
+            <li><img src="images/hamsik.png"></li>
+            <li><img src="images/radio-cas.png"></li>
+            <li><img src="images/rexona.png"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="third-background">
+        <div class="foot-block">
+          <div class="foot-block-text">
+            <h4>NENECHTE SI UJÍT NOVINKY Z OKTAGONU</h4>
+            <p>Každou neděli vám pošleme přehled za uplynulý týden a získáte náskok při předprodeji vstupenek</p>
+          </div>
+          <div class="foot-block-input">
+            <input type="email" placeholder="Váš email">
+            <button>Přihlásit odběr</button>
+          </div>
+        </div>
+      </div>
+      <div class="foot-end">
+        <div class="foot-end-opa">
+          <div class="foot-end-list">
+            <ul>
+              <li><a>OKTAGON TURNAJE</a></li>
+              <li><a>NAŠI BOJOVNÍCI</a></li>
+              <li><a>ŽEBŘÍČKY</a></li>
+              <li><a>POŘADY A PROJEKTY</a></li>
+              <li><a>NOVINKY</a></li>
+              <li><a>BARY</a></li>
+              <li><a>ORGANIZACE</a></li>
+            </ul>
+          </div>
+          <div class="foot-end-list-2">
+            <ul>
+              <li> <i class="fab fa-facebook"></i><a>Facebook</a></li>
+              <li> <i class="fab fa-instagram"></i><a>Instagram</a></li>
+              <li> <i class="fab fa-youtube"></i><a>Youtube</a></li>
+              <li> <i class="fab fa-tiktok"></i><a>TikTok</a></li>
+              <li> <i class="fab fa-twitter"></i><a>Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="download-foot">
+            <ul>
+              <li><button><img src="images/app-store-white.png"> </button></li>
+              <li><button><img src="images/google-play-white.png"> </button></li>
+            </ul>
+          </div>
+
+          <!--
+
+          
+          <div class="okt-tv-foot">
+            <ul>
+              <li><img src="images/logo-okt-tv-white.png"> </button></li>
+              <li>
+                <p>Užijte si to nejlepší z bojových sportů v Česko-Slovensku, Německu a Španělsku včetně přímých
+                  přenosů, zápasů a dokumentů z MMA, Muay Thai, kickboxerské a boxerské scény.</p>
+              </li>
+              <li><button>OTEVŘÍT OKTAGON.TV </button></li>
+            </ul>
+          </div>
+          -->
+
+        </div>
+      </div>
+
+
+
+    </footer>
+
+
+  </div>
+  <script>
+    currentSlide(1);
+
+
+  </script>
+</body>
+
+</html>

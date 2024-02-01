@@ -1,0 +1,703 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+ 
+}
+
+@media screen and (max-width:1600px){
+  html
+{
+  zoom:80%
+}
+}
+
+/*Hlava*/
+header {
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    font-size: 1.25em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+#timer
+{
+
+  margin-left: -300px;
+  margin-right: 125px;
+  color: black;
+}
+
+
+.first-background
+{
+  background-color: rgb(229, 231, 235);
+}
+
+.second-background
+{
+  background-color: white;
+}
+
+.third-background
+{
+  background-color: rgb(34, 34, 3);
+}
+
+.content {
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.header-logos img {
+    width: 140px; 
+    height: auto;
+    
+}
+/*Hlava Buttony*/
+#header-left-logo
+{
+  margin-right: 35em;
+}
+
+
+.a-header-div
+{
+    
+    background-color: black;
+}
+
+.a-header-div a{
+    color:#fff;
+    text-decoration-line: none;
+    transition: 1s;
+}
+
+.a-header-div a:hover{
+  font-size: 20px;
+  text-decoration: underline rgb(251 ,205 ,34) 20%;
+  text-underline-offset: 10px;
+  transition: 1s;
+
+}
+
+.a-header-div ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.a-header-div li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
+    display: inline;
+    
+  }
+  
+.a-header-div svg
+{
+  margin-top: 12px;
+  position: absolute;
+  fill: #fff;
+}
+
+/*Karusel*/
+
+
+
+* {
+  box-sizing:border-box
+}
+
+.slideshow-container {
+  position: relative;
+
+}
+
+.slideshow-container img
+{
+    width: 100%;
+    animation: fade 0.5s ease-in-out;
+      width: 100%;
+      overflow: hidden;
+
+   
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+.Containers {
+  display: none;
+
+  transition: opacity 0.5s;
+}
+
+.Back, .forward {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  margin-top: -21px;
+  padding: 17px;
+  padding-top: 6em;
+  padding-bottom: 3em;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+}
+
+.forward {  
+  right: 0;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+}
+
+.Back
+{
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+}
+
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Karusel popisek*/
+
+.carousel-description
+{
+  background-color: rgba(45, 46, 46,1);
+  width: 55%;
+  position: absolute;
+  height: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  
+}
+
+.carousel-description-text
+{
+  animation: fade 0.5s ease-in-out;
+}
+.carousel-description-buttons
+{
+  position: absolute;
+  height: 250px;
+  left: 84%;
+  transform: translate(-50%, -50%);
+
+}
+
+.carousel-description-button-1
+{
+  background-color: rgb(251 ,205 ,34);
+  color:rgba(45, 46, 46,1);
+  margin-top: -145px;
+  border-color: rgb(251 ,205 ,34);
+  padding: 9px;
+}
+
+.carousel-description-button-2
+{
+  background-color: rgba(45, 46, 46,1);;
+  color: rgb(251 ,205 ,34);
+  margin-top: 10px;
+  border-color: rgb(251 ,205 ,34);
+
+  padding-left: 53px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 53px;
+}
+
+.carousel-description-button-1:hover
+{
+  font-weight: bolder;
+  font-size: 18px;
+  transition: 0.2s;
+  padding: 16px;
+}
+
+.carousel-description-button-2:hover
+{
+  font-weight: bolder;
+  font-size: 18px;
+
+  transition: 0.2s;
+  transition: 0.2s;
+  padding-left: 55px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 55px;
+
+}
+
+
+
+.carousel-description h1,h2,h4
+{
+  
+  margin-left: 100px;
+}
+
+.carousel-description h1
+{
+  color: white;
+}
+
+.carousel-description h2
+{
+  color: rgb(251, 205, 34);
+}
+.carousel-description h4
+{
+  color: rgb(168, 168, 168);
+  margin-right: 350px;
+
+}
+
+/*Novinky z klece*/
+
+.news-from-cage
+{
+  margin: auto;
+  margin-top: 200px;
+  margin-left: 425px;
+}
+
+
+.news-from-cage ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.news-from-cage li 
+{
+    
+    display: inline;
+    font-size: 28px;
+    font-weight: bolder;
+
+}
+
+.news-from-cage li:first-child
+{
+  margin-right: 600px;
+}
+
+.news-from-cage li:nth-child(2)
+{
+  margin-right: 20px;
+}
+
+.news-from-cage a
+{
+  color:black;
+  
+  text-decoration: none;
+  transition: 1s;
+}
+
+.news-from-cage a:hover
+{
+
+  text-decoration: underline rgb(251 ,205 ,34) 20%;
+  text-underline-offset: 10px;
+  transition: 1s;
+}
+
+/*Novinky blok*/
+
+
+
+
+.news-block
+{
+  width: 100%;
+  max-width: fit-content;
+  margin: auto;
+
+  display: flex;
+  box-sizing: border-box;
+}
+.news-block img
+{
+  display: flex;
+  width: 320px;
+  height: 320px;
+}
+
+#first-block
+{
+  margin-top: 50px;
+}
+
+#eight-block
+{
+  margin-top: 20px;
+}
+
+
+#second-block
+{
+  margin-top: 20px;
+}
+
+#third-block
+{
+  margin-top: 20px;
+}
+
+#fourth-block
+{
+  margin-top: 20px;
+}
+
+#fifth-block
+{
+  margin-top: 20px;
+}
+
+#sixth-block
+{
+  margin-top: 20px;
+}
+
+#seventh-block
+{
+  margin-top: 20px;
+}
+
+.news-block-text
+{
+  position: relative;
+  width: 730px;
+  background-color: #fff;
+  height: 320px;
+}
+
+.news-block-text h4
+{
+  margin-top: 30px;
+  font-size: 32px;
+  padding-right: 50px;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+.news-block-text p
+{
+  margin-top: 0px;
+  font-size: 1.25rem;
+  padding-right: 30px;
+  margin-left: 30px;
+}
+
+.news-block-photo-ad img
+{
+  width: 1050px;
+  height: 320px;
+}
+
+.news-see-more button
+{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #fff;
+  border: 2px solid;
+  border-color: rgb(251 ,205 ,34);
+  padding: 15px;
+  margin-left: 850px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.news-see-more button:hover
+{
+  padding: 17px;
+}
+
+/* o projektech blok*/
+
+.about-projects
+{
+  width: 350px;
+  display: flex;
+  margin-left: 410px;
+}
+
+.about-serial-project img
+{
+  width: 350px;
+  height: 221px;
+}
+
+.about-serial-project h4
+{
+  margin-left: 0;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+
+.about-serial-project p
+{
+  font-size: 17px;
+
+}
+
+#serial-project-1
+{
+  margin-right: 20px;
+}
+
+#serial-project-2
+{
+  margin-right: 20px;
+}
+
+.about-projects-text
+{
+  margin-left: 410px;
+  font-size: 22px;
+}
+
+.foot-logos img
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100px;
+  filter: grayscale(100%);
+}
+
+.foot-logos ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.foot-logos li 
+{
+  padding-left: 50px;
+  padding-right: 50px;
+  display: inline;
+}
+
+.foot-logos li:first-child
+{
+  padding-left: 350px;
+
+  display: inline;
+}
+
+.foot-block
+{
+  margin-left: 410px;
+  display: flex;
+  color:#fff;
+  border-bottom: 3px solid rgb(168, 168, 168);
+  padding-bottom: 15px;
+  margin-right: 370px;
+}
+
+.foot-block-text
+{
+  margin-right: 80px;
+}
+
+.foot-block-text h4
+{
+  margin-left: 0px;
+}
+
+.foot-block-text p
+{
+  font-size: 12px;
+}
+
+.foot-block-input
+{
+  margin-top: 20px;
+}
+
+.foot-block-input input,button
+{
+  width: 180px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgb(34, 34, 3);
+  font-size: 15px;
+}
+
+.foot-block-input input
+{
+  border: 1px solid rgb(168 168 168);
+}
+
+.foot-block-input button
+{
+  color: rgb(251, 205, 34);
+  border: 2px solid rgb(251, 205, 34);
+}
+
+.foot-end-opa
+{
+  background-image: linear-gradient(
+    rgba(34, 34, 3, 1.0) 0%,
+    rgba(34, 34, 3, 0.700) 90%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  display: flex;
+}
+
+.foot-end {
+  margin-top: -16px;
+  background-image: url('images/footer.png');
+  background-size:cover;
+  
+}
+
+.foot-end-list ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.foot-end-list li 
+{
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.foot-end-list
+{
+  margin-top: 50px;
+  margin-left: 410px;
+}
+
+
+.foot-end-list-2 ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.foot-end-list-2 li 
+{
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.foot-end-list-2
+{
+  margin-top: 50px;
+  margin-left: 160px;
+}
+
+.download-foot ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.download-foot
+{
+  margin-top: 50px;
+  margin-left: 120px;
+}
+
+.download-foot img
+{
+  margin-top: -15px;
+  width: 200px;
+  height: 68px;
+}
+
+.download-foot button
+{
+  background: transparent;
+width: 210px;
+height: 68px;
+margin-bottom: 15px;
+border: 1px solid #fff;
+}
+
+.okt-tv-foot
+{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.okt-tv-foot img
+{
+  width: 192px;
+}
+
+.okt-tv-foot p
+{
+  color: rgb(168, 168, 168);
+  font-weight: bold;
+  margin-right: 370px;
+}
+
+.okt-tv-foot ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.okt-tv-foot button
+{
+  background: transparent;
+  color: orangered;
+  border: 2px solid orangered;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
